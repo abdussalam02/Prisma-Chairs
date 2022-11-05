@@ -1,13 +1,12 @@
 {
     "version": 2,
-    "installCommand": "pip install",
     "builds": [
-        { "src": "*.html", "use": "@vercel/static" },
-        { "src": "*.py", "use": "@vercel/python" },
-        { "src": "*.js", "use": "@vercel/js" }
+        {
+            "src": "./index.py",
+            "use": "@vercel/python"
+        }
     ],
     "routes": [
-        { "handle": "filesystem" },
         {
             "src": "/(.*)",
             "dest": "/"
