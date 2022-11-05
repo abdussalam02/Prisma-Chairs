@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #1b4053;
+  --white: #fdfff5;
+  --shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+/* Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset var(--shadow); 
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}
+
+
+/* Carousal Home*/
+
+.car-img {
+  border-radius: 20px;
+  height: 500px;
+  width: 400px;
+}
+
+.adv-text {
+  padding: 100px 0;
+  text-align: center;
+}
+
+
+/* Products */
+.p-hover {
+  display: none;
+}
+.p-still {
+  cursor: pointer;
+}
+
+.p-still:hover + .p-hover {
+  transition: 0.3s ease-in-out;
+  display: block;
+  color: red;
+}
+
+
+/* Services */
+
+.boxers {
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+
+/* Contact */
+
+.cnt-box {
+  border-color: 3px solid black;
+  box-shadow: var(--shadow);
+}
+  
+input {
+  width: 100%;
+  border: none;
+  border-bottom:1px solid #ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+  
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+  
+label {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--black);
+}
+  
+.cnt-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--main-color);
+  border:none;
+  outline:none;
+  color:white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.map-con {
+  border:0;
+  border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+  .cnt-box button {
+    margin-left: 50px;
+  }
+  .map-con{
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .cnt-box button {
+    margin-right: 180px;
+  }
+  .map-con {
+    width: fit-content;
+  }
+}
+
+
+/* Footer */
